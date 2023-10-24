@@ -9,7 +9,8 @@ import UIKit
 
 
 class ResultVC: UIViewController {
-    var loginDataCompletion: (([String]) -> Void)? //스트링 타입의 배열을 매개변수로 전달 할거고, 리턴타입은 void다!
+    typealias loginData = String
+    var loginDataCompletion: (([loginData]) -> Void)? //스트링 타입의 배열을 매개변수로 전달 할거고, 리턴타입은 void다!
 
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
